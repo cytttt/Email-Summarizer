@@ -1,5 +1,6 @@
 # Email Summarizer
 
+Automated email summarizer with Discord notifications
 
 ## Structures
 ```
@@ -18,6 +19,9 @@ email-summarizer/
 
 ├── authorize_gmail.py  # Get token by credentials
 ```
+## Workflow
+
+![image](flow_chart.png)
 
 ## Testing
 

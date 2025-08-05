@@ -12,3 +12,6 @@ cloudrun.yaml
 email_agent.log
 DEPLOYMENT.md
 y/
+
+# OS
+.DS_Store
