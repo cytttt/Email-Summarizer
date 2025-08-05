@@ -1,4 +1,6 @@
 # Email Summarizer
+
+
 ## Structures
 ```
 email-summarizer/
@@ -17,22 +19,27 @@ email-summarizer/
 ├── authorize_gmail.py  # Get token by credentials
 ```
 
-## Testing Notes
-
-This repo supports two modes:
-
-- **Full mode**: uses real Gmail API (requires token.json, credentials.json), OpenRouter API
-- **Mock mode**: uses dummy email + fake LLM for easy review
+## Testing
 
 ```
 // install requirements
 pip install -r requirements.txt
-
-// Tests locally with gmail, openrouter API
-python agent.py --local
-
-// Tests with mock input
-python agent.py --mock
 ```
+This repo supports two modes:
+- **Mock mode**: uses dummy email + fake LLM for easy review
+    ```
+    // Tests with mock input
+    python agent.py --mock
+    ```
+
+- **Full mode**: uses real Gmail API (requires token.json, credentials.json), OpenRouter API
+    - https://developers.google.com/workspace/gmail/api/auth/web-server 
+    ```
+    // Generate token.json from credentials.json
+    python authorize_gmail.py
+
+    // Tests locally with gmail, openrouter API
+    python agent.py --local
+    ```
 
 All logic in `agent.py` is tested identically in both modes.
