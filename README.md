@@ -26,6 +26,7 @@ email-summarizer/
 ## Testing
 
 ```
+// Use python 3.10.6
 // install requirements
 pip install -r requirements.txt
 ```
@@ -37,7 +38,7 @@ This repo supports two modes:
     ```
 
 - **Full mode**: uses real Gmail API (requires token.json, credentials.json), OpenRouter API
-    - https://developers.google.com/workspace/gmail/api/auth/web-server 
+    - [How to generate credentials.json](https://developers.google.com/workspace/gmail/api/auth/web-server)
     ```
     // Generate token.json from credentials.json
     python authorize_gmail.py
@@ -47,3 +48,17 @@ This repo supports two modes:
     ```
 
 All logic in `agent.py` is tested identically in both modes.
+
+## Deployment
+1. Prerequisites: install Google Cloud CLI and login 
+2. Modify the configuration in `deploy.sh`
+    ```
+    PROJECT_ID="your-project-id"
+    SERVICE_NAME="your-service-name"
+    REGION="your-region"
+    ```
+3. Run `deploy.sh`
+    ```
+    // Deploy
+    ./deploy.sh
+    ```
