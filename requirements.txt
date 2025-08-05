@@ -1,0 +1,10 @@
+python-dotenv
+openai
+requests
+google-api-python-client
+google-auth
+google-auth-oauthlib
+google-cloud-storage
+beautifulsoup4
+flask
+gunicorn

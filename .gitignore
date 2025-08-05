@@ -1,0 +1,14 @@
+.env
+credentials.json
+token.json
+__pycache__/
+DEPLOYMENT.md
+
+
+# Cloud Run configuration (contains sensitive info)
+cloudrun.yaml
+
+# Deployment logs
+email_agent.log
+DEPLOYMENT.md
+y/
