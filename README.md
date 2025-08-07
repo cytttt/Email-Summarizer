@@ -5,7 +5,7 @@ Automated email summarizer with Discord notifications
 ## Video Demo
 [Demo link](https://youtu.be/2GvLVeTGhtA)
 
-## Structures
+## Repo Structures
 ```
 email-summarizer/
 ├── README.md
@@ -21,6 +21,7 @@ email-summarizer/
 └── utils.py
 
 ├── authorize_gmail.py  # Get token by credentials
+├── design.md  # Reflected questions
 ```
 ## Workflow
 
