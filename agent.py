@@ -76,6 +76,7 @@ def health_check():
 if __name__ == "__main__":
     # Check if running in Cloud Run environment
     port = int(os.environ.get('PORT', 8080))
+    
     if os.environ.get('K_SERVICE'):
         # Running in Cloud Run
         log_info(f"[CloudRun] Starting server on port {port}")

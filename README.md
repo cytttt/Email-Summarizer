@@ -2,6 +2,9 @@
 
 Automated email summarizer with Discord notifications
 
+## Video Demo
+[Demo link](https://youtu.be/2GvLVeTGhtA)
+
 ## Structures
 ```
 email-summarizer/
@@ -39,6 +42,7 @@ This repo supports two modes:
 
 - **Full mode**: uses real Gmail API (requires token.json, credentials.json), OpenRouter API
     - [How to generate credentials.json](https://developers.google.com/workspace/gmail/api/auth/web-server)
+    - Fill in your `.env` based on `.env.sample`
     ```
     // Generate token.json from credentials.json
     python authorize_gmail.py
