@@ -14,14 +14,14 @@ email-summarizer/
 ├── deploy.sh
 ├── .dockerignore
 ├── .gitignore
-├── agent.py
+├── agent.py                # Main program entry point
 ├── gmail_client.py
 ├── openrouter_client.py
 ├── notify_discord.py
 └── utils.py
 
-├── authorize_gmail.py  # Get token by credentials
-├── design.md  # Reflected questions
+├── authorize_gmail.py      # Get token by credentials
+├── design.md               # Reflection questions
 ```
 ## Workflow
 
