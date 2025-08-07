@@ -36,7 +36,7 @@ def parse_openrouter_response(text):
     except json.JSONDecodeError as e:
         print("[Parser] JSON parsing failed:", e)
         print("[Parser] Raw content:\n", cleaned)
-        return {}
+        return None
 
 # Configure logging based on environment
 handlers = [logging.StreamHandler()]  # Always log to console

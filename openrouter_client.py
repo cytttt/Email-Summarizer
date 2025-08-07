@@ -81,11 +81,15 @@ Body:
             if attempt > 0:
                 log_info(f"Successfully processed email after {attempt + 1} attempts")
             
+            cleaned_output = parse_openrouter_response(output)
+            if not cleaned_output:
+                raise RuntimeError(f"OpenRouter error: {output}")
+            
             return {
                 "id": email["id"],
                 "subject": email["subject"],
                 "from": email["from"],
-                "output": parse_openrouter_response(output)
+                "output": cleaned_output
             }
             
         except Exception as e:
